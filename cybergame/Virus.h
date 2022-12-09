@@ -9,7 +9,7 @@ public:
 	void SetSize();						//隕石のサイズ設定関数
 	void SetVec();						//隕石のベクトル設定関数
 	void SetImage();					//隕石の画像データ設定関数
-	void MoveMeteo();					//隕石の動作設定関数
+	void MoveVirus();					//隕石の動作設定関数
 	void Draw();						//隕石の描画関数
 	void Delete();						//隕石の画像データをメモリから開放する関数
 	float GetPosX() { return posX; }	//隕石のX座標データ取得関数

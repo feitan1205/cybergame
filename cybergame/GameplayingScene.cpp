@@ -18,13 +18,17 @@ void GameplayingScene::Update(const InputState& input) {
 	
 	aim1.SetPos();																			//エイム(マウスポインタ)の座標を取得
 
+	//for (int i = 0; i < 4; i++) {
+	//	if (virus[i].GetPosX() < -(virus[i].GetsizeX())) {									//隕石が画面外に行ったとき
+
+	//		virus[i].SetPos();																//隕石の座標データを再取得
+	//		virus[i].SetVec();																//隕石のベクトルを再取得
+
+	//	}
+	//}
+
 	for (int i = 0; i < 4; i++) {
-		if (virus[i].GetPosX() < -(virus[i].GetsizeX())) {									//隕石が画面外に行ったとき
-
-			virus[i].SetPos();																//隕石の座標データを再取得
-			virus[i].SetVec();																//隕石のベクトルを再取得
-
-		}
+		virus[i].MoveVirus();
 	}
 
 	if (input.IsTriggered(InputType::shot)) {

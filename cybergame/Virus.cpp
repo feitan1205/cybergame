@@ -61,7 +61,7 @@ void Virus::SetImage() {
 }
 
 //隕石の動作設定関数
-void Virus::MoveMeteo() {
+void Virus::MoveVirus() {
 
 	posX -= vecX * kSpeed;														//X座標をベクトル分移動させる
 	posY += vecY * kSpeed;														//Y座標をベクトル分移動させる
