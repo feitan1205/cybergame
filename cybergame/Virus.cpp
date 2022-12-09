@@ -19,6 +19,10 @@ Virus::Virus() {
 
 }
 
+Virus::~Virus()
+{
+}
+
 
 //隕石の座標データの設定関数
 void Virus::SetPos() {
